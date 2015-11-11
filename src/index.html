@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>KoçJS Demo</title>
+
+	<styleincludes/>
+	<scriptincludes/>
+</head>
+<body onload="onDeviceReady()">
+	<script type="text/javascript">
+        var onDeviceReady = function() {
+            new app.Bootstrapper();
+        };
+    </script>
+	<like-widget-component params="value: ko.observable(null)"></like-widget-component>
+
+	<div data-bind="template: vm.currentView()"></div>
+</body>
+
+
+</html>
